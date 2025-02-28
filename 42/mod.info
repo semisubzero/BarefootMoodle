@@ -1,0 +1,8 @@
+id=BarefootMoodle
+name=Barefoot Moodle
+poster=poster.png
+description=Adds moodle to indicate broken shoes
+author=Semisubzero
+modversion=0.0.1
+icon=icon.png
+versionMin=42.0.0
