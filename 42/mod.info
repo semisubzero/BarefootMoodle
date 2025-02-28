@@ -6,4 +6,4 @@ author=Semisubzero
 modversion=0.0.1
 icon=icon.png
 versionMin=42.0.0
-require=/MoodleFramework
+require=\MoodleFramework
