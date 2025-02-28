@@ -2,9 +2,12 @@ require "MF_ISMoodle"
 print("Barefoot Moodle Loaded.")
 
 MF.createMoodle('Barefoot')
+MF.createMoodle('TornShoe')
 
-local function OnNewGame(player)
-    MF.getMoodle('Barefoot',player:getPlayerNum()):setValue(0.0)
+
+local function OnClothingUpdated(character)
+    --MF.getMoodle('Barefoot',player:getPlayerNum()):setValue(0.0)
+    print(player:getClothingItemFeet())
 end
 
-Events.OnNewGame.Add(OnNewGame)
+Events.OnClothingUpdated.Add(OnClothingUpdated)
