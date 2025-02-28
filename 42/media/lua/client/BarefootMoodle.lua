@@ -1,8 +1,10 @@
 require "MF_ISMoodle"
 print("Barefoot Moodle Loaded.")
 
+MF.createMoodle('Barefoot')
+
 local function OnNewGame(player)
-    MF.createMoodle(Barefoot);
-    MF.getMoodle(Barefoot,playerNum):setValue(1.0)
+    MF.getMoodle('Barefoot',playerNum):setValue(0.0)
+end
 
 Events.OnNewGame.Add(OnNewGame)
